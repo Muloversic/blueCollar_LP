@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'iconfont';
-  src: url('../fonts/iconfont.eot?v59jag');
-  src: url('../fonts/iconfont.eot?v59jag#iefix') format('embedded-opentype'),
-    url('../fonts/iconfont.ttf?v59jag') format('truetype'), url('../fonts/iconfont.woff?v59jag') format('woff'),
-    url('../fonts/iconfont.svg?v59jag#iconfont') format('svg');
+  src: url('../fonts/iconfont.eot?n54uqf');
+  src: url('../fonts/iconfont.eot?n54uqf#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.ttf?n54uqf') format('truetype'), url('../fonts/iconfont.woff?n54uqf') format('woff'),
+    url('../fonts/iconfont.svg?n54uqf#iconfont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^='icon-'],
-[class*=' icon-'] {
+[class^='icon-']::before,
+[class*=' icon-']::before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'iconfont' !important;
   speak: never;
@@ -69,4 +69,10 @@
 }
 .icon-user:before {
   content: '\e90e';
+}
+.icon-menu:before {
+  content: '\e9bd';
+}
+.icon-cross:before {
+  content: '\ea0f';
 }
