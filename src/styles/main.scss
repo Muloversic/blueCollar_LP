@@ -61,6 +61,59 @@ body {
   &__logo-block {
     flex: 0 0 55%;
   }
+
+  &__main-screen {
+    margin-top: 65px;
+    background: url(../images/headerImage.png) center/cover no-repeat;
+  }
+
+  &__screen-info {
+    padding: 271px 0 500px 0;
+    max-width: 700px;
+  }
+
+  &__motto {
+    max-width: 660px;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 40px 5px 62px;
+    margin-bottom: 30px;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 3%;
+      transform: translate(-0%, -50%);
+      font-size: 28px;
+      color: #ffb342;
+    }
+  }
+
+  &__title {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 78px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    background: #ffb342;
+    border: 2px solid #ffb342;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    padding: 18px 43px;
+    color: #1c2752;
+  }
 }
 
 .contacts {
