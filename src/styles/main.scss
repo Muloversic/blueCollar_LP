@@ -2,9 +2,25 @@ body {
   font-family: 'Inter';
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
   &__socials-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
     background: #f2f2f2;
+    transition: left 0.5s ease 0s;
+    @media screen and (max-width: 768px) {
+      position: fixed;
+      width: 100%;
+    }
   }
 
   &__container {
@@ -32,6 +48,19 @@ body {
     @media screen and (max-width: 1000px) {
       flex: 0 0 70%;
     }
+
+    @media screen and (max-width: 768px) {
+      flex: 0 0 60%;
+    }
+    @media screen and (max-width: 600px) {
+      margin-left: 45px;
+    }
+
+    @media screen and (max-width: 468px) {
+      flex: 1 1 20%;
+      margin-left: 25px;
+      width: 50%;
+    }
   }
 
   &__socials-list {
@@ -43,6 +72,10 @@ body {
       .header__socials-item a {
         font-size: 30px;
       }
+    }
+
+    @media screen and (max-width: 520px) {
+      display: none;
     }
   }
 
@@ -68,12 +101,91 @@ body {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__logo-block {
     flex: 0 0 55%;
     @media screen and (max-width: 1060px) {
       flex: 0 0 35%;
+    }
+  }
+
+  &__burger-icon {
+    display: none;
+    @media screen and (max-width: 768px) {
+      display: block;
+      font-size: 30px;
+    }
+
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      top: 50%;
+      left: 2px;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &__burger-menu {
+    position: absolute;
+    overflow: scroll;
+    top: -13px;
+    left: -100%;
+    width: 320px;
+    background-color: #f2f2f2;
+    height: 500px;
+    z-index: 10;
+    transition: all 0.5s ease 0s;
+    @media screen and (max-width: 400px) {
+      width: 280px;
+    }
+
+    &--active {
+      left: 0;
+    }
+
+    .header__logo-block {
+      padding: 10px 0 0 15px;
+    }
+	
+    .menu {
+      position: relative;
+      z-index: 1;
+      bottom: -12px;
+      left: 0;
+      flex-direction: column;
+      &__list {
+        flex-direction: column;
+      }
+
+      &__list-item {
+        margin-top: 10px;
+      }
+
+      &__btn {
+        margin-top: 10px;
+        padding: 10px 15px;
+      }
+    }
+
+    .contacts {
+      flex-direction: column;
+      margin: 20px 0;
+      &__body {
+        margin-top: 30px;
+        &:nth-child(2) {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    .header__socials-list {
+      display: flex;
+      margin-top: 50px;
+      margin-bottom: 20px;
     }
   }
 
