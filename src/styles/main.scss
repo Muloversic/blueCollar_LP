@@ -414,11 +414,12 @@ body.lock {
     display: flex;
   }
 }
+
 .future {
   &__column {
     &:nth-child(2) {
       margin-left: 50px;
-      margin-top: 10px;
+      margin-top: 20px;
       max-width: 555px;
     }
   }
@@ -427,15 +428,23 @@ body.lock {
   }
 
   &__subtitle {
+    display: inline-block;
+    position: relative;
     font-weight: 400;
     font-size: 18px;
-    line-height: 27px;
     letter-spacing: 0.36px;
     text-transform: capitalize;
     color: #1c2752;
     background: #f4f4f4;
     margin-bottom: 22px;
+    padding: 5px 20px 5px 55px;
+    max-width: 260px;
     &::before {
+      position: absolute;
+      top: 0%;
+      left: 7%;
+      margin-right: 10px;
+      font-size: 28px;
       color: #ffb342;
     }
   }
@@ -464,13 +473,18 @@ body.lock {
 
   &__row-block {
     display: flex;
+    margin-top: 27px;
   }
 
   &__experience {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #f4f4f4;
-    margin-right: 40px;
+    margin-right: 44px;
+    max-height: 230px;
+    max-width: 200px;
   }
 
   &__experience-years {
@@ -483,6 +497,7 @@ body.lock {
     color: #ffb342;
     margin-bottom: 18px;
     margin-top: 25px;
+    margin-right: 4px;
   }
 
   &__experience-title {
@@ -493,12 +508,13 @@ body.lock {
     text-align: center;
     letter-spacing: 0.36px;
     color: #1c2752;
-    padding: 0 43px 40px 43px;
+    padding: 0 45px 51px 43px;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
+    margin-top: 18px;
   }
 
   &__list-item {
@@ -508,8 +524,13 @@ body.lock {
     letter-spacing: 0.36px;
     color: #7e7e7e;
     margin-top: 10px;
+    padding-left: 10px;
     &:first-of-type {
       margin-top: 0;
+    }
+
+    &::marker {
+      content: '-';
     }
   }
 }
