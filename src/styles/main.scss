@@ -20,6 +20,7 @@ body.lock {
     @media screen and (max-width: 768px) {
       position: fixed;
       width: 100%;
+      z-index: 5;
     }
   }
 
@@ -129,34 +130,37 @@ body.lock {
     }
   }
 
+  &__burger-wrapper {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 3;
+    transition: all 0.5s ease 0s;
+    &--active {
+      left: 0;
+    }
+  }
+
   &__burger-menu {
     position: absolute;
     overflow: scroll;
-    top: -13px;
-    left: -100%;
+    top: 0;
+    left: 0;
     width: 320px;
     background-color: #f2f2f2;
     height: 500px;
-    z-index: 10;
-    transition: all 0.5s ease 0s;
     @media screen and (max-width: 400px) {
       width: 280px;
-    }
-
-    &--active {
-      left: 0;
     }
 
     .header__logo-block {
       padding: 10px 0 0 15px;
     }
-	
+
     .menu {
-      position: relative;
-      z-index: 1;
-      bottom: -12px;
-      left: 0;
+      position: static;
       flex-direction: column;
+      margin-top: 12px;
       &__list {
         flex-direction: column;
       }
