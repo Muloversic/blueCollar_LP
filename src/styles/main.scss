@@ -201,6 +201,9 @@ body.lock {
   &__screen-info {
     padding: 271px 0 500px 0;
     max-width: 700px;
+    @media screen and (max-width: 768px) {
+      padding: 171px 0 200px 0;
+    }
   }
 
   &__motto {
@@ -233,6 +236,10 @@ body.lock {
     text-transform: capitalize;
     color: #fff;
     margin-bottom: 30px;
+    @media screen and (max-width: 768px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
   }
 
   &__btn {
