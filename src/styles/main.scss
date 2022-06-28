@@ -678,15 +678,19 @@ body.lock {
   }
 
   &__info-block {
-    display: none;
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 52%;
     left: 2.2%;
     background: #ffffff;
     box-shadow: -1px 6px 18px rgba(0, 0, 0, 0.09);
     padding: 60px 61px 70px 52px;
-    &--commercial {
-      display: flex;
+    transition: 0.6s all ease-in;
+    &--active {
+      opacity: 1;
+      visibility: visible;
     }
 
     @media screen and (max-width: 768px) {

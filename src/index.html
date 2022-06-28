@@ -188,18 +188,18 @@
             <div class="service__buttons-row">
               <div class="service__button-block">
                 <img src="./images/icons/city.svg" alt="city" class="service__button-img" />
-                <button class="service__button service__button--active" id="commercial">Commercial</button>
+                <button class="service__button service__button--active" data-target="commercial">Commercial</button>
               </div>
               <div class="service__button-block">
                 <img src="./images/icons/house-gear.svg" alt="house" class="service__button-img" />
-                <button class="service__button" id="residential">Residential</button>
+                <button class="service__button" data-target="residential">Residential</button>
               </div>
               <div class="service__button-block">
                 <img src="./images/icons/factory.svg" alt="factory" class="service__button-img" />
-                <button class="service__button" id="industrial">Industrial</button>
+                <button class="service__button" data-target="industrial">Industrial</button>
               </div>
             </div>
-            <div class="service__info-block service__info-block--commercial">
+            <div class="service__info-block service__info-block--active" id="commercial">
               <div class="service__description">
                 <h5 class="service__description-label">
                   <img src="./images/icons/city.svg" alt="city" class="service__description-icon" />
@@ -220,7 +220,7 @@
                 <img src="./images/commercialImage.png" alt="commercialImage" class="service__info-image" />
               </div>
             </div>
-            <div class="service__info-block service__info-block--residential">
+            <div class="service__info-block" id="residential">
               <div class="service__description">
                 <h5 class="service__description-label">
                   <img src="./images/icons/house-gear.svg" alt="house" class="service__description-icon" />
@@ -241,7 +241,7 @@
                 <img src="./images/commercialImage.png" alt="commercialImage" class="service__info-image" />
               </div>
             </div>
-            <div class="service__info-block service__info-block--industrial">
+            <div class="service__info-block" id="industrial">
               <div class="service__description">
                 <h5 class="service__description-label">
                   <img src="./images/icons/factory.svg" alt="factory" class="service__description-icon" />

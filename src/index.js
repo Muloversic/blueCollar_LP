@@ -16,3 +16,22 @@ burgerIcon.addEventListener('click', () => {
     socialHeaderWrapepr.style.left = 0 + 'px';
   }
 });
+
+// service buttons&elements
+const disableElement = (selector, className) => [...selector].forEach((element) => element.classList.remove(className));
+
+const buttonsContainer = document.querySelector('.service__buttons-row');
+buttonsContainer.addEventListener('click', (e) => {
+  const allServiceInfoBlocks = document.querySelectorAll('.service__info-block');
+  const allServiceButtons = document.querySelectorAll('.service__button');
+
+  if ([...e.target.classList].includes('service__button')) {
+    disableElement(allServiceInfoBlocks, 'service__info-block--active');
+    disableElement(allServiceButtons, 'service__button--active');
+    const button = e.target;
+    const dataBlockToShow = button.getAttribute('data-target');
+    const activeBlock = document.querySelector(`#${dataBlockToShow}`);
+    activeBlock.classList.add('service__info-block--active');
+    button.classList.add('service__button--active');
+  }
+});
