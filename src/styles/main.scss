@@ -678,13 +678,17 @@ body.lock {
   }
 
   &__info-block {
-    display: flex;
+    display: none;
     position: absolute;
     top: 52%;
     left: 2.2%;
     background: #ffffff;
     box-shadow: -1px 6px 18px rgba(0, 0, 0, 0.09);
     padding: 60px 61px 70px 52px;
+    &--commercial {
+      display: flex;
+    }
+
     @media screen and (max-width: 768px) {
       top: 66%;
       left: 50%;
