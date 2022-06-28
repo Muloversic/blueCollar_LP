@@ -409,7 +409,7 @@ body.lock {
     }
   }
 
-  &__future {
+  &__company {
     margin: 140px 0;
     display: flex;
     @media screen and (max-width: 1200px) {
@@ -421,7 +421,7 @@ body.lock {
   }
 }
 
-.future {
+.company {
   &__column {
     &:nth-child(2) {
       margin-left: 50px;
