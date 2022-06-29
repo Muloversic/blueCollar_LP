@@ -796,6 +796,13 @@ body.lock {
     justify-content: center;
     align-items: center;
     padding-top: 253px;
+    @media screen and (max-width: 768px) {
+      padding-top: 635px;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding-top: 565px;
+    }
   }
 
   &__text--light {
@@ -804,11 +811,19 @@ body.lock {
 
   &__areas {
     display: grid;
-    grid-template-columns: repeat(3, 380px);
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
     padding-bottom: 140px;
     margin-top: 12px;
+    @media screen and (max-width: 932px) {
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+
+    @media screen and (max-width: 630px) {
+      grid-template-columns: repeat(1, minmax(220px, 1fr));
+      padding-bottom: 40px;
+    }
   }
 
   &__area-item {
