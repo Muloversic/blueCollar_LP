@@ -1341,6 +1341,17 @@ body.lock {
     width: 98%;
   }
 
+  &__container {
+    display: none;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    &--active {
+      display: block;
+    }
+  }
+
   &__heading-wrapper {
     display: flex;
     align-items: center;
@@ -1443,10 +1454,15 @@ body.lock {
       border-radius: 100px;
       z-index: -1;
     }
+  }
 
-    &--prev {
+  @keyframes fade {
+    from {
+      opacity: 0.4;
     }
-    &--next {
+
+    to {
+      opacity: 1;
     }
   }
 }

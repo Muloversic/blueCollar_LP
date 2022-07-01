@@ -35,3 +35,39 @@ buttonsContainer.addEventListener('click', (e) => {
     button.classList.add('service__button--active');
   }
 });
+
+//slider customers
+const controlBtn = document.querySelector('.slider__controls');
+const slideBlocks = document.querySelectorAll('.slider__container');
+let currentSlideIndex = 1;
+// console.log(slideBlocks.length);
+
+controlBtn.addEventListener('click', (event) => {
+  if ([...event.target.classList].includes('slider__btn--prev')) {
+    currentSlideIndex -= 1;
+    if (currentSlideIndex <= 0) {
+      currentSlideIndex = slideBlocks.length;
+    }
+
+    slide(currentSlideIndex);
+  }
+
+  if ([...event.target.classList].includes('slider__btn--next')) {
+    currentSlideIndex += 1;
+    if (currentSlideIndex > slideBlocks.length) {
+      currentSlideIndex = 1;
+    }
+
+    slide(currentSlideIndex);
+  }
+});
+
+function slide(currentSlideIndex) {
+  console.log(currentSlideIndex);
+  [...slideBlocks].forEach((slide, index) => {
+    slide.classList.remove('slider__container--active');
+    if (currentSlideIndex === index + 1) {
+      slide.classList.add('slider__container--active');
+    }
+  });
+}
