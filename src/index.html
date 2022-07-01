@@ -145,34 +145,389 @@
     </header>
     <main class="main">
       <div class="main__container">
-        <section class="main__future future">
-          <div class="future__column">
-            <img src="./images/futureImage.png" alt="futureMan" class="future__image" />
+        <section class="main__company company">
+          <div class="company__column">
+            <img src="./images/futureImage.png" alt="futureMan" class="company__image" />
           </div>
-          <div class="future__column">
-            <h2 class="future__subtitle icon-helment">Welcome BlueCollar</h2>
-            <h1 class="future__title">We Provide Your Future</h1>
-            <p class="future__text">
+          <div class="company__column">
+            <h2 class="company__subtitle icon-helment">Welcome BlueCollar</h2>
+            <h1 class="company__title">We Provide Your Future</h1>
+            <p class="company__text">
               Bluecollar Electrical services was established in 2008. We are trusted and reliable electricians who serve
               customers in the city as well as throughout United States Of America.
             </p>
-            <p class="future__text future__text--smaller">
+            <p class="company__text company__text--smaller">
               We have extensive experience of domestic and business electrical installations and no job is too small. Our
               customers value our professionalism, work ethic and our competitive prices.
             </p>
-            <div class="future__row-block">
-              <div class="future__experience">
-                <span class="future__experience-years">35</span>
-                <h4 class="future__experience-title">Years Of Experience</h4>
+            <div class="company__row-block">
+              <div class="company__experience">
+                <span class="company__experience-years">35</span>
+                <h4 class="company__experience-title">Years Of Experience</h4>
               </div>
-              <ul class="future__list">
-                <li class="future__list-item">For all your system requirements</li>
-                <li class="future__list-item">All work undertaken by qualified</li>
-                <li class="future__list-item">Experienced office staff on hand</li>
-                <li class="future__list-item">A Full Guarantee On Workmanship</li>
-                <li class="future__list-item">Properties at a reasonable price.</li>
+              <ul class="company__list">
+                <li class="company__list-item">For all your system requirements</li>
+                <li class="company__list-item">All work undertaken by qualified</li>
+                <li class="company__list-item">Experienced office staff on hand</li>
+                <li class="company__list-item">A Full Guarantee On Workmanship</li>
+                <li class="company__list-item">Properties at a reasonable price.</li>
               </ul>
             </div>
+          </div>
+        </section>
+      </div>
+      <section class="main__service service">
+        <div class="service__wrapper">
+          <div class="main__container">
+            <div class="service__main">
+              <h5 class="service__label icon-helment">What We Offer</h5>
+              <h1 class="service__title">Professional Main Services</h1>
+              <p class="service__text">
+                We have extensive experience of domestic and business electrical installations and no job is too small. Our
+                customers value our professionalism, work ethic and our competitive prices.
+              </p>
+              <div class="service__buttons-row">
+                <div class="service__button-block">
+                  <img src="./images/icons/city.svg" alt="city" class="service__button-img" />
+                  <button class="service__button service__button--active" data-target="commercial">Commercial</button>
+                </div>
+                <div class="service__button-block">
+                  <img src="./images/icons/house-gear.svg" alt="house" class="service__button-img" />
+                  <button class="service__button" data-target="residential">Residential</button>
+                </div>
+                <div class="service__button-block">
+                  <img src="./images/icons/factory.svg" alt="factory" class="service__button-img" />
+                  <button class="service__button" data-target="industrial">Industrial</button>
+                </div>
+              </div>
+              <div class="service__info-block service__info-block--active" id="commercial">
+                <div class="service__description">
+                  <h5 class="service__description-label">
+                    <img src="./images/icons/city.svg" alt="city" class="service__description-icon" />
+                    Electrical installation
+                  </h5>
+                  <h3 class="service__title">Commercial</h3>
+                  <p class="service__info-text">
+                    Electrical & Maintenance Services Ltd offers a full range of electrical services to suit your needs –
+                    from moving a light switch to complete house rewires.
+                  </p>
+                  <p class="service__info-text service__info-text--wide">
+                    In addition to providing fully qualified, competent electricians in and around London, the company also
+                    runs an electrical wholesale shop.
+                  </p>
+                  <button class="service__info-btn">Read More</button>
+                </div>
+                <div class="service__image-block">
+                  <img src="./images/commercialImage.png" alt="commercialImage" class="service__info-image" />
+                </div>
+              </div>
+              <div class="service__info-block" id="residential">
+                <div class="service__description">
+                  <h5 class="service__description-label">
+                    <img src="./images/icons/house-gear.svg" alt="house" class="service__description-icon" />
+                    Electrical installation
+                  </h5>
+                  <h3 class="service__title">Residential</h3>
+                  <p class="service__info-text">
+                    Electrical & Maintenance Services Ltd offers a full range of electrical services to suit your needs –
+                    from moving a light switch to complete house rewires.
+                  </p>
+                  <p class="service__info-text service__info-text--wide">
+                    In addition to providing fully qualified, competent electricians in and around London, the company also
+                    runs an electrical wholesale shop.
+                  </p>
+                  <button class="service__info-btn">Read More</button>
+                </div>
+                <div class="service__image-block">
+                  <img src="./images/commercialImage.png" alt="commercialImage" class="service__info-image" />
+                </div>
+              </div>
+              <div class="service__info-block" id="industrial">
+                <div class="service__description">
+                  <h5 class="service__description-label">
+                    <img src="./images/icons/factory.svg" alt="factory" class="service__description-icon" />
+                    Electrical installation
+                  </h5>
+                  <h3 class="service__title">Industrial</h3>
+                  <p class="service__info-text">
+                    Electrical & Maintenance Services Ltd offers a full range of electrical services to suit your needs –
+                    from moving a light switch to complete house rewires.
+                  </p>
+                  <p class="service__info-text service__info-text--wide">
+                    In addition to providing fully qualified, competent electricians in and around London, the company also
+                    runs an electrical wholesale shop.
+                  </p>
+                  <button class="service__info-btn">Read More</button>
+                </div>
+                <div class="service__image-block">
+                  <img src="./images/commercialImage.png" alt="commercialImage" class="service__info-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service__wrapper">
+          <div class="main__container">
+            <div class="service__types">
+              <h5 class="service__label icon-note_document_icon">Area Of Service</h5>
+              <h1 class="service__title">Our Services</h1>
+              <p class="service__text service__text--light">
+                We offers a comprehensive range of electrical services for domestic and commercial properties at a reasonable
+                price.
+              </p>
+              <div class="service__areas">
+                <div class="service__area-item">
+                  <img src="./images/icons/ari-conditioner.svg" alt="conditioner" />
+                  <h4 class="service__area-heading">Air condition service</h4>
+                  <p class="service__area-text">
+                    Services are able to service your entire electrical infrastructure from Thermal Imaging of your air
+                    condition from switch boards.
+                  </p>
+                  <a href="#" class="service__area-link">View More</a>
+                </div>
+                <div class="service__area-item">
+                  <img src="./images/icons/electr-install.svg" alt="electr-install" />
+                  <h4 class="service__area-heading">Electrical installation</h4>
+                  <p class="service__area-text service__area-text--smaller">
+                    The art electrical installations that provide all the necessary electrical solutions to suit your
+                    business, home or industrial premises.
+                  </p>
+                  <a href="#" class="service__area-link">View More</a>
+                </div>
+                <div class="service__area-item">
+                  <img src="./images/icons/builder.svg" alt="builder" />
+                  <h4 class="service__area-heading">General Builder</h4>
+                  <p class="service__area-text">
+                    We provide impeccable safety assessments to both commercial, residential properties. Our adept &
+                    knowledgeable electricians.
+                  </p>
+                  <a href="#" class="service__area-link">View More</a>
+                </div>
+                <div class="service__area-item">
+                  <img src="./images/icons/lock.svg" alt="lock" />
+                  <h4 class="service__area-heading">Security System</h4>
+                  <p class="service__area-text service__area-text--smaller">
+                    Utilized for measuring flow, temperature level & pressure in the manufacturing industry array of
+                    technology is ensure productivity.
+                  </p>
+                  <a href="#" class="service__area-link">View More</a>
+                </div>
+                <div class="service__area-item">
+                  <img src="./images/icons/tools.svg" alt="tools" />
+                  <h4 class="service__area-heading">Service & maintenance</h4>
+                  <p class="service__area-text">
+                    Electrical Services are able to service your entire electrical infrastructure from Thermal Imaging of
+                    your switch boards.
+                  </p>
+                  <a href="#" class="service__area-link">View More</a>
+                </div>
+                <div class="service__area-item">
+                  <img src="./images/icons/house.svg" alt="house" />
+                  <h4 class="service__area-heading">House Extensions</h4>
+                  <p class="service__area-text">
+                    Traditionally, electricity is supplied through overhead network poles, where the cable is connected to
+                    your building.
+                  </p>
+                  <a href="#" class="service__area-link">View More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__company company company--spaceless">
+        <div class="company__wrapper">
+          <div class="company__column company__column--reasons">
+            <img src="./images/reasonsImage.png" alt="reasonsImage" class="company__image company__image--reasons" />
+            <ul class="company__image-text">
+              <li class="company__image-label">
+                <div class="company__label-values">3956</div>
+                <div class="company__label-text">Project Done</div>
+              </li>
+              <li class="company__image-label">
+                <div class="company__label-values">854</div>
+                <div class="company__label-text">People Working</div>
+              </li>
+              <li class="company__image-label">
+                <div class="company__label-values">265</div>
+                <div class="company__label-text">Business Partners</div>
+              </li>
+              <li class="company__image-label">
+                <div class="company__label-values">845+</div>
+                <div class="company__label-text">Happy Customers</div>
+              </li>
+            </ul>
+          </div>
+          <div class="company__column company__column--reasons">
+            <h2 class="company__subtitle company__subtitle--note icon-note_document_icon">Why Choose Us</h2>
+            <h1 class="company__title">Few Reasons Why You Should Choose Us</h1>
+            <p class="company__text company__text--smaller">
+              We are offering the following information's about us that what we actually do in the electrical sector. To
+              Improve our customers’ lives by providing creative and cost-effective solutions to their needs.
+            </p>
+            <ul class="company__list company__list--checks">
+              <li class="company__list-item company__list-item--check icon-check-solid">
+                35 Years Experience
+                <p class="company__list-text">
+                  Effective communication is the key to success for any business. From our office staff, to our field.
+                </p>
+              </li>
+              <li class="company__list-item company__list-item--check icon-check-solid">
+                Excellence Certificate
+                <p class="company__list-text">
+                  We understand fully that your time is of extreme value. We are committed to meeting deadlines.
+                </p>
+              </li>
+              <li class="company__list-item company__list-item--check icon-check-solid">
+                Affordable Price
+                <p class="company__list-text">
+                  We adhere strictly to the current National Electrical Code, and we conduct regular in-house sessions.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="main__company company company--spaceless">
+        <div class="company__wrapper company__wrapper--column company__wrapper--dark company__wrapper--padding">
+          <h2 class="company__subtitle company__subtitle--note icon-note_document_icon">The Gallery</h2>
+          <h1 class="company__title company__title--light">Our Recent Projects</h1>
+          <div class="company__projects">
+            <div class="company__projects-item">
+              <img src="./images/project-black-man.png" alt="commercial" class="company__projects-image" />
+              <div class="company__projects-info">
+                <h4 class="company__projects-heading">Fiber cable change</h4>
+                <p class="company__projects-text">Commercial</p>
+              </div>
+            </div>
+            <div class="company__projects-item">
+              <img src="./images/project-man-in-red.png" alt="man-in-red" class="company__projects-image" />
+              <div class="company__projects-info">
+                <h4 class="company__projects-heading">Industry machine issue</h4>
+                <p class="company__projects-text">Industry</p>
+              </div>
+            </div>
+            <div class="company__projects-item">
+              <img src="./images/project-industry.png" alt="industry" class="company__projects-image" />
+              <div class="company__projects-info">
+                <h4 class="company__projects-heading">Wheel Alloy Change</h4>
+                <p class="company__projects-text">Residential</p>
+              </div>
+            </div>
+            <div class="company__projects-item">
+              <img src="./images/project-roof.png" alt="roof" class="company__projects-image" />
+              <div class="company__projects-info">
+                <h4 class="company__projects-heading">Roof Cleaning</h4>
+                <p class="company__projects-text">Commercial</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="main__container">
+        <section class="main__contact contact">
+          <div class="contact__customers">
+            <h4 class="contact__label icon-note_document_icon">Testimonial</h4>
+            <h2 class="contact__heading">Customers Says</h2>
+            <div class="contact__slider slider">
+              <div class="slider__container slider__container--active">
+                <div class="slider__heading">
+                  <div class="slider__heading-wrapper">
+                    <img src="./images/nancy-img.png" alt="nancy" />
+                    <div class="slider__title">
+                      <h6 class="slider__title-name">Nancy luther</h6>
+                      <p class="slider__title-text">NewYork</p>
+                    </div>
+                  </div>
+                  <div class="slider__icon icon-quote"></div>
+                </div>
+                <div class="slider__body">
+                  <div class="slider__body-text">
+                    We have had several good experiences with
+                    <span class="slider__body-text slider__body-text--highlighted">Blue Collar</span> team. Most recently,
+                    they replaced our 20-year-old HVAC system with a new,<span
+                      class="slider__body-text slider__body-text--highlighted"
+                    >
+                      modern, and more efficient</span
+                    >
+                    system & it worked fine.
+                  </div>
+                </div>
+              </div>
+              <div class="slider__container">
+                <div class="slider__heading">
+                  <div class="slider__heading-wrapper">
+                    <img src="./images/nancy-img.png" alt="nancy" />
+                    <div class="slider__title">
+                      <h6 class="slider__title-name">Mary Morgan</h6>
+                      <p class="slider__title-text">Los-Angeles</p>
+                    </div>
+                  </div>
+                  <div class="slider__icon icon-quote"></div>
+                </div>
+                <div class="slider__body">
+                  <div class="slider__body-text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="slider__body-text slider__body-text--highlighted">Blue Lorem Ipsum</span> team. Most
+                    recently, they replaced our 20-year-old HVAC system with a new,<span
+                      class="slider__body-text slider__body-text--highlighted"
+                    >
+                      modern, and more efficient</span
+                    >
+                    system & it worked fine.
+                  </div>
+                </div>
+              </div>
+              <div class="slider__container">
+                <div class="slider__heading">
+                  <div class="slider__heading-wrapper">
+                    <img src="./images/nancy-img.png" alt="nancy" />
+                    <div class="slider__title">
+                      <h6 class="slider__title-name">Zlata Vetrowich</h6>
+                      <p class="slider__title-text">Krakow</p>
+                    </div>
+                  </div>
+                  <div class="slider__icon icon-quote"></div>
+                </div>
+                <div class="slider__body">
+                  <div class="slider__body-text">
+                    We have had several good experiences with
+                    <span class="slider__body-text slider__body-text--highlighted">Moreal llar</span> team. Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. Distinctio recusandae ipsa, nam tenetur architecto
+                    voluptasoribus accusantium deleniti expedita mollitia animi facere iure quisquam! our 20-year-old HVAC
+                    system with a new,<span class="slider__body-text slider__body-text--highlighted">
+                      modern, and more efficient</span
+                    >
+                    system & it worked fine.
+                  </div>
+                </div>
+              </div>
+              <div class="slider__controls">
+                <a class="slider__btn slider__btn--prev icon-angle-left-solid"></a>
+                <a class="slider__btn slider__btn--next icon-angle-right-solid"></a>
+              </div>
+            </div>
+            <div class="contact__questions">
+              <h4 class="contact__label contact__label--questions icon-note_document_icon">Any Question</h4>
+              <h5 class="contact__title-secondary">99.9% Customer Satisfaction Based</h5>
+              <p class="contact__text">If you have any questions or need help contact with our team, or call</p>
+              <div class="contact__phone">
+                <span class="contact__icon icon-telephone_icon"></span>
+                <a href="tel:0031234567890" class="contact__phone-number">(003) 123 456 7890</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact__appointment">
+            <h4 class="contact__label contact__label--appointment icon-note_document_icon">Meet Us</h4>
+            <h2 class="contact__heading">Appointment Form</h2>
+            <form class="contact__form form">
+              <input type="text" placeholder="Your name" class="form__input" />
+              <input type="email" placeholder="Your email" class="form__input" />
+              <input type="tel" placeholder="Phone Number" class="form__input" />
+              <input type="text" placeholder="Date" class="form__input" />
+              <textarea name="AppointmentDescription" placeholder="Service Description" class="form__text-area"></textarea>
+              <button type="submit" class="form__button">Submit</button>
+            </form>
           </div>
         </section>
       </div>
