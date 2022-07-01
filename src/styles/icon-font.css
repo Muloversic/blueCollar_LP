@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'iconfont';
-  src: url('../fonts/iconfont.eot?n54uqf');
-  src: url('../fonts/iconfont.eot?n54uqf#iefix') format('embedded-opentype'),
-    url('../fonts/iconfont.ttf?n54uqf') format('truetype'), url('../fonts/iconfont.woff?n54uqf') format('woff'),
-    url('../fonts/iconfont.svg?n54uqf#iconfont') format('svg');
+  src: url('../fonts/iconfont.eot?gt3ht');
+  src: url('../fonts/iconfont.eot?gt3ht#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.ttf?gt3ht') format('truetype'), url('../fonts/iconfont.woff?gt3ht') format('woff'),
+    url('../fonts/iconfont.svg?gt3ht#iconfont') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-angle-left-solid:before {
+  content: '\e90f';
+}
 .icon-telephone_icon:before {
   content: '\e900';
 }
