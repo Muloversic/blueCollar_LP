@@ -456,6 +456,14 @@ body.lock {
       margin-top: 50px;
     }
   }
+
+  &__clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 96px;
+  }
 }
 
 .company {
@@ -477,7 +485,7 @@ body.lock {
     }
 
     &--padding {
-      padding-top: 147px;
+      padding-top: 136px;
     }
 
     @media screen and (max-width: 1024px) {
@@ -1449,6 +1457,60 @@ body.lock {
 
     to {
       opacity: 1;
+    }
+  }
+}
+
+.clients {
+  &__label {
+    @include label;
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.36px;
+    color: #1c2752;
+    margin-bottom: 45px;
+  }
+
+  &__companies {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and(max-width:768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    &:nth-of-type(1) {
+      margin-left: 64px;
+    }
+    &:nth-of-type(2) {
+      margin-left: 35px;
+    }
+    &:nth-of-type(3) {
+      margin-left: 13px;
+    }
+    &:nth-of-type(4) {
+      margin-left: 37px;
+    }
+
+    @media screen and(max-width:890px) {
+      padding: 10px 8px;
+      &:nth-of-type(1),
+      &:nth-of-type(2),
+      &:nth-of-type(3),
+      &:nth-of-type(4) {
+        margin-left: 0;
+      }
     }
   }
 }
