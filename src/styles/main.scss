@@ -1,3 +1,25 @@
+@mixin label {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+  text-transform: capitalize;
+  color: #1c2752;
+  background: #f4f4f4;
+  margin-top: 12px;
+  padding: 0 20px 0 45px;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+    color: #ffb342;
+    font-size: 23px;
+  }
+}
+
 body {
   font-family: 'Inter';
 }
@@ -577,26 +599,8 @@ body.lock {
   }
 
   &__subtitle {
-    display: inline-block;
-    position: relative;
-    font-weight: 400;
-    font-size: 18px;
-    letter-spacing: 0.36px;
-    text-transform: capitalize;
-    color: #1c2752;
-    background: #f4f4f4;
+    @include label;
     margin-bottom: 22px;
-    padding: 5px 20px 5px 55px;
-    max-width: 260px;
-    &::before {
-      position: absolute;
-      top: 0%;
-      left: 7%;
-      margin-right: 10px;
-      font-size: 28px;
-      color: #ffb342;
-    }
-
     &--note {
       &::before {
         top: 50%;
@@ -1128,16 +1132,7 @@ body.lock {
   }
 
   &__label {
-    position: relative;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    letter-spacing: 0.36px;
-    text-transform: capitalize;
-    color: #1c2752;
-    background: #f4f4f4;
-    margin-top: 12px;
-    padding: 0 20px 0 45px;
+    @include label;
     &--questions {
       margin-top: 5px;
       padding: 0 20px 0 50px;
@@ -1146,15 +1141,6 @@ body.lock {
     &--appointment {
       margin-left: 5px;
       padding: 0 20px 0 48px;
-    }
-
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 10%;
-      transform: translate(0, -50%);
-      color: #ffb342;
-      font-size: 23px;
     }
   }
 
