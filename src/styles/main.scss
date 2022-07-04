@@ -190,6 +190,7 @@ body.lock {
     width: 320px;
     background-color: #f2f2f2;
     height: 100vh;
+    z-index: 10;
     @media screen and (max-width: 400px) {
       width: 280px;
     }
@@ -2165,6 +2166,10 @@ body.lock {
 
       @media screen and(max-width:768px) {
         margin-top: 40px;
+      }
+
+      .contacts__icon {
+        z-index: 2;
       }
     }
   }
