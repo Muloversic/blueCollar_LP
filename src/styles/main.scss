@@ -85,6 +85,7 @@ body.lock {
     @media screen and (max-width: 768px) {
       flex: 0 0 60%;
     }
+
     @media screen and (max-width: 600px) {
       margin-left: 45px;
     }
@@ -126,6 +127,10 @@ body.lock {
     a {
       color: inherit;
       font-size: 18px;
+      transition: all 0.7s ease;
+      &:hover {
+        color: #ffb342;
+      }
     }
   }
 
@@ -283,6 +288,11 @@ body.lock {
     letter-spacing: 0.36px;
     padding: 18px 43px;
     color: #1c2752;
+    transition: all 0.7s ease;
+    &:hover {
+      color: #fff;
+      background: #2c3765;
+    }
   }
 }
 
@@ -1077,6 +1087,11 @@ body.lock {
     line-height: 30px;
     letter-spacing: 0.36px;
     color: #1c2752;
+    transition: all 0.7s ease;
+    &:hover {
+      color: #fff;
+      background: #2c3765;
+    }
   }
 
   &__image-block {
@@ -1168,7 +1183,11 @@ body.lock {
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.36px;
-    color: #ffffff;
+    color: #fff;
+    transition: all 0.7s ease;
+    &:hover {
+      color: #ffc368;
+    }
   }
 }
 
@@ -1373,6 +1392,11 @@ body.lock {
     background: #ffb342;
     border: 2px solid #ffb342;
     padding: 18px 0;
+    transition: all 0.7s ease;
+    &:hover {
+      color: #fff;
+      background-color: #2c3765;
+    }
   }
 }
 
@@ -1491,12 +1515,21 @@ body.lock {
       display: block;
       width: 50px;
       height: 50px;
+      transition: all 0.7s ease;
       position: absolute;
       top: 0%;
       left: 0%;
       background: #f4f4f4;
       border-radius: 100px;
       z-index: -1;
+    }
+
+    transition: all 0.7s ease;
+    &:hover {
+      color: #fff;
+      &::after {
+        background-color: #2c3765;
+      }
     }
   }
 
@@ -1755,9 +1788,6 @@ body.lock {
     }
   }
 
-  &__price {
-  }
-
   &__price-type {
     font-weight: 400;
     font-size: 20px;
@@ -1855,8 +1885,14 @@ body.lock {
     letter-spacing: 0.36px;
     color: #1c2752;
     background-color: #ffb342;
+    transition: all 0.7s ease;
     @media screen and(max-width:510px) {
       width: 100%;
+    }
+
+    &:hover {
+      color: #fff;
+      background-color: #2c3765;
     }
   }
 }
@@ -1957,11 +1993,16 @@ body.lock {
     letter-spacing: 0.4px;
     color: #1c2752;
     margin-top: 17px;
+    transition: all 0.7s ease;
     &::before {
       position: absolute;
       top: 5px;
       right: -23px;
       font-size: 17px;
+    }
+
+    &:hover {
+      color: #ffc368;
     }
   }
 }
@@ -2049,9 +2090,15 @@ body.lock {
     letter-spacing: 0.36px;
     color: #1c2752;
     padding: 20px 49px;
+    transition: all 0.7s ease;
     @media screen and(max-width:425px) {
       width: 100%;
       margin-top: 15px;
+    }
+
+    &:hover {
+      color: #fff;
+      background: #2c3765;
     }
   }
 }
@@ -2227,6 +2274,7 @@ body.lock {
     position: relative;
     color: #fff;
     font-size: 20px;
+    transition: all 0.7s ease;
     &::before {
       position: relative;
       z-index: 2;
@@ -2242,7 +2290,15 @@ body.lock {
       height: 60px;
       background: #2c3765;
       border-radius: 50%;
+      transition: all 0.7s ease;
       z-index: 1;
+    }
+
+    &:hover {
+      color: #2c3765;
+      &::after {
+        background: #fff;
+      }
     }
   }
 
@@ -2352,22 +2408,9 @@ body.lock {
     line-height: 27px;
     letter-spacing: 0.36px;
     color: #fff;
-  }
-}
-
-.contacts {
-  &__body {
-  }
-
-  &__icon {
-  }
-
-  &__info {
-  }
-
-  &__conntect-name {
-  }
-
-  &__conntect-type {
+    transition: all 0.7s ease;
+    &:hover {
+      color: #ffb342;
+    }
   }
 }
