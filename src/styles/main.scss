@@ -38,6 +38,10 @@ body.lock {
   overflow: hidden;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .header {
   position: relative;
   top: 0;
