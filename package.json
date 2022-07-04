@@ -3,7 +3,7 @@
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve --env develop",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
   "devDependencies": {
