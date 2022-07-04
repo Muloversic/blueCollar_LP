@@ -303,6 +303,7 @@ body.lock {
   &__icon {
     font-size: 28px;
     position: relative;
+    z-index: 3;
     &::after {
       content: '';
       position: absolute;
@@ -334,6 +335,9 @@ body.lock {
     line-height: 26px;
     letter-spacing: 0.36px;
     color: #1c2752;
+    &--light {
+      color: #fff;
+    }
   }
 
   &__conntect-type {
@@ -342,6 +346,9 @@ body.lock {
     line-height: 27px;
     letter-spacing: 0.36px;
     color: #7e7e7e;
+    &--light {
+      color: #fff;
+    }
   }
 }
 
@@ -2046,5 +2053,215 @@ body.lock {
       width: 100%;
       margin-top: 15px;
     }
+  }
+}
+
+.footer {
+  background: #1c2752;
+  padding: 72px 0 105px 0;
+  .contacts {
+    .contacts__body {
+      &:nth-of-type(2) {
+        margin-right: 22px;
+      }
+
+      &:nth-of-type(3) {
+        margin-right: 34px;
+        .contacts__info {
+          margin-top: -17px;
+        }
+      }
+
+      .icon-location_map_marker_icon {
+        font-size: 43px;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--links {
+      margin-top: 64px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        top: -17%;
+        left: 0%;
+        display: block;
+        background: #4b557d;
+        height: 2px;
+        width: 100%;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 110%;
+        left: 0%;
+        display: block;
+        background: #4b557d;
+        height: 2px;
+        width: 100%;
+      }
+    }
+  }
+
+  &__logo {
+    flex: 0 1 20%;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  &__contacts {
+    flex: 0 1 73%;
+    margin-bottom: 22px;
+  }
+
+  &__socials {
+    position: relative;
+    flex: 0 1 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 70px;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 18%;
+      right: -11%;
+      display: block;
+      width: 2px;
+      height: 129%;
+      background: #4b557d;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #fff;
+  }
+
+  &__socials-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  &__socials-item {
+    margin-right: 56px;
+    &:nth-of-type(1) {
+      margin-left: 19px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__list-link {
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    &::before {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -81%;
+      left: -97%;
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: #2c3765;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0 1 75%;
+    margin-bottom: 15px;
+  }
+
+  &__nav-list {
+    li {
+      margin-top: 7px;
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      &:nth-of-type(2) {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  &__nav-list--explore {
+    margin-left: 123px;
+  }
+  &__nav-list--access {
+    margin-right: 70px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 44%;
+      right: -65%;
+      display: block;
+      width: 2px;
+      height: 110%;
+      background: #4b557d;
+    }
+  }
+
+  &__nav-list--utility {
+    margin-right: 80px;
+  }
+
+  &__nav-title {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+    color: #ffb342;
+  }
+
+  &__nav-link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #ffffff;
+  }
+}
+
+.contacts {
+  &__body {
+  }
+
+  &__icon {
+  }
+
+  &__info {
+  }
+
+  &__conntect-name {
+  }
+
+  &__conntect-type {
   }
 }
